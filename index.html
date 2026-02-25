@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="DSG International Courier offers fast, reliable, and secure worldwide shipping services.">
+    <title>DSG International Courier - Worldwide Shipping Services</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts: Inter for English, Noto Sans Gujarati for Gujarati -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Gujarati:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.svg" alt="DSG International Courier" class="brand-logo">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="track.html" class="nav-link">Track</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <!-- Language Toggle -->
+                <button id="lang-toggle" class="btn-ghost">
+                    <i class="ph ph-translate"></i>
+                    <span class="current-lang">EN</span>
+                </button>
+                <a href="track.html" class="btn-primary">Track Parcel</a>
+
+                <button class="menu-toggle btn-ghost">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-bg-glow glow-2"></div>
+        <div class="hero-particles"></div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge fade-in-up">
+                    <span class="live-dot"></span> Worldwide Shipping
+                </div>
+
+                <!-- English Intro -->
+                <div class="lang-en text-content">
+                    <h1 class="fade-in-up delay-1">Overseas Parcel Service,<br> <span class="text-gradient">Trusted
+                            Destination.</span></h1>
+                    <p class="fade-in-up delay-2">Gozariya's oldest and well-known parcel service. Specialists in
+                        overseas parcels. We ship to USA, Canada, UK, AUS, NZ, UAE, Europe & Worldwide.</p>
+                </div>
+
+                <!-- Gujarati Intro -->
+                <div class="lang-gu text-content hidden">
+                    <h1 class="fade-in-up locale-gu delay-1">પરદેશ પાર્સલ સર્વિસ,<br> <span
+                            class="text-gradient">વિશ્વાસપાત્ર સ્થળ.</span></h1>
+                    <p class="fade-in-up locale-gu delay-2">ગોઝારીયાની સૌથી જૂની અને જાણીતી પાર્સલ સર્વિસ. પરદેશ
+                        પાર્સલના સ્પેશ્યાલિસ્ટ. અમે USA, Canada, UK, AUS, NZ, UAE, Europe અને વિશ્વભરમાં પાર્સલ મોકલીએ
+                        છીએ.</p>
+                </div>
+
+                <div class="hero-actions fade-in-up delay-3">
+                    <a href="services.html" class="btn-primary btn-large">
+                        <span class="lang-en">Explore Services</span>
+                        <span class="lang-gu hidden locale-gu">સેવાઓ અન્વેષણ કરો</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </a>
+                    <a href="contact.html" class="btn-secondary btn-large">
+                        <span class="lang-en">Get a Quote</span>
+                        <span class="lang-gu hidden locale-gu">કિંમત જાણો</span>
+                    </a>
+                </div>
+
+                <div class="stats fade-in-up delay-4">
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p class="lang-en">Countries</p>
+                        <p class="lang-gu hidden locale-gu">દેશો</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p class="lang-en">Support</p>
+                        <p class="lang-gu hidden locale-gu">આધાર</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50K+</h3>
+                        <p class="lang-en">Delivered</p>
+                        <p class="lang-gu hidden locale-gu">પહોંચાડ્યું</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in">
+                <!-- Visual tracking mock -->
+                <div class="glass-card mockup-card">
+                    <div class="mockup-header">
+                        <i class="ph ph-package"></i>
+                        <span class="lang-en">Live Tracking</span>
+                        <span class="lang-gu hidden locale-gu">લાઇવ ટ્રેકિંગ</span>
+                    </div>
+                    <div class="tracking-progress">
+                        <div class="progress-line"></div>
+                        <div class="step active">
+                            <div class="dot"><i class="ph ph-check"></i></div>
+                            <span class="lang-en">Processed</span>
+                            <span class="lang-gu hidden locale-gu">પ્રક્રિયા પૂર્ણ</span>
+                        </div>
+                        <div class="step active">
+                            <div class="dot"><i class="ph ph-airplane-tilt"></i></div>
+                            <span class="lang-en">In Transit</span>
+                            <span class="lang-gu hidden locale-gu">રસ્તામાં છે</span>
+                        </div>
+                        <div class="step">
+                            <div class="dot"><i class="ph ph-house"></i></div>
+                            <span class="lang-en">Delivered</span>
+                            <span class="lang-gu hidden locale-gu">પહોંચી ગયું</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Where We Ship Section -->
+    <section class="section">
+        <div class="container text-center">
+            <div class="section-header scroll-reveal">
+                <span class="badge lang-en">Global Destinations</span>
+                <span class="badge lang-gu hidden locale-gu">ગ્લોબલ ડેસ્ટિનેશન</span>
+
+                <h2 class="lang-en">Where We <span class="text-accent">Ship</span></h2>
+                <h2 class="lang-gu hidden locale-gu">અમે ક્યાં ક્યાં <span class="text-accent">મોકલીએ</span></h2>
+                <p class="lang-en text-muted mt-4 text-large">Fast, safe & reliable delivery to 150+ countries
+                    worldwide.</p>
+                <p class="lang-gu hidden locale-gu text-muted mt-4 text-large">વિશ્વભરના ૧૫૦+ દેશોમાં ઝડપી, સુરક્ષિત અને
+                    ભરોસાપાત્ર ડિલિવરી.</p>
+            </div>
+
+            <div class="countries-grid mt-8">
+                <div class="glass-card scroll-reveal">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🇺🇸</div>
+                    <div class="lang-en font-bold">USA</div>
+                    <div class="lang-gu hidden locale-gu font-bold">અમેરિકા</div>
+                </div>
+                <div class="glass-card scroll-reveal delay-1">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🇨🇦</div>
+                    <div class="lang-en font-bold">Canada</div>
+                    <div class="lang-gu hidden locale-gu font-bold">કૅનેડા</div>
+                </div>
+                <div class="glass-card scroll-reveal delay-2">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🇬🇧</div>
+                    <div class="lang-en font-bold">United Kingdom</div>
+                    <div class="lang-gu hidden locale-gu font-bold">ઇંગ્લૅન્ડ</div>
+                </div>
+                <div class="glass-card scroll-reveal delay-3">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🇦🇺</div>
+                    <div class="lang-en font-bold">Australia</div>
+                    <div class="lang-gu hidden locale-gu font-bold">ઑસ્ટ્રેલિયા</div>
+                </div>
+                <div class="glass-card scroll-reveal">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🇳🇿</div>
+                    <div class="lang-en font-bold">New Zealand</div>
+                    <div class="lang-gu hidden locale-gu font-bold">ન્યૂઝિલૅન્ડ</div>
+                </div>
+                <div class="glass-card scroll-reveal delay-1">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🇦🇪</div>
+                    <div class="lang-en font-bold">UAE / Dubai</div>
+                    <div class="lang-gu hidden locale-gu font-bold">UAE / દુબઈ</div>
+                </div>
+                <div class="glass-card scroll-reveal delay-2">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
+                    <div class="lang-en font-bold">Europe</div>
+                    <div class="lang-gu hidden locale-gu font-bold">યુરોપ</div>
+                </div>
+                <div class="glass-card scroll-reveal delay-3">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌐</div>
+                    <div class="lang-en font-bold">Worldwide</div>
+                    <div class="lang-gu hidden locale-gu font-bold">વિશ્વભરમાં</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners & Enquiry Section -->
+    <!-- Partners Section -->
+    <section class="section pt-8">
+        <div class="container text-center" style="max-width: 900px; margin: 0 auto;">
+            <div class="scroll-reveal">
+                <div class="badge mb-4"
+                    style="background: rgba(255,87,34,0.1); color: var(--accent-primary); border: none;">
+                    <span class="lang-en">Our Partners</span>
+                    <span class="lang-gu hidden locale-gu">અમારા ભાગીદારો</span>
+                </div>
+                <h2 class="lang-en mb-6">Trusted Carrier <span class="text-accent">Partners</span></h2>
+                <h2 class="lang-gu hidden locale-gu mb-6">ભરોસાદાર કૅરિયર <span class="text-accent">પાર્ટનર</span>
+                </h2>
+
+                <p class="lang-en text-muted mb-8 text-large">Track your shipments effortlessly with our global
+                    carrier partners.</p>
+                <p class="lang-gu hidden locale-gu text-muted mb-8 text-large">અમારા વૈશ્વિક કેરિયર ભાગીદારો સાથે
+                    વિના પ્રયાસે તમારા શિપમેન્ટને ટ્રૅક કરો.</p>
+
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: left;">
+                    <a href="https://www.ups.com/track" target="_blank" rel="noopener noreferrer" class="glass-card"
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 2rem; text-decoration: none; color: white;">
+                        <div
+                            style="background: white; padding: 1rem; border-radius: 12px; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/UPS_Logo_Shield_2017.svg"
+                                alt="UPS" style="width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                        <h3 style="margin: 0; font-size: 1.2rem;">UPS</h3>
+                    </a>
+
+                    <a href="https://www.fedex.com/en-us/tracking.html" target="_blank" rel="noopener noreferrer"
+                        class="glass-card"
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 2rem; text-decoration: none; color: white;">
+                        <div
+                            style="background: white; padding: 1rem; border-radius: 12px; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/FedEx_Express.svg" alt="FedEx"
+                                style="width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                        <h3 style="margin: 0; font-size: 1.2rem;">FedEx</h3>
+                    </a>
+
+                    <a href="https://www.dhl.com/global-en/home/tracking.html" target="_blank" rel="noopener noreferrer"
+                        class="glass-card"
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 2rem; text-decoration: none; color: white;">
+                        <div
+                            style="background: white; padding: 1rem; border-radius: 12px; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/DHL_Logo.svg" alt="DHL"
+                                style="width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                        <h3 style="margin: 0; font-size: 1.2rem;">DHL</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track Section Removed from Home -->
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" alt="DSG International Courier" class="brand-logo">
+                </a>
+                <p class="lang-en text-muted mt-4">Connecting businesses and people globally with trusted logistics
+                    solutions.</p>
+                <p class="lang-gu hidden locale-gu text-muted mt-4">વિશ્વસનીય લોજિસ્ટિક્સ ઉકેલો સાથે વૈશ્વિક સ્તરે
+                    વ્યવસાયો અને લોકોને જોડવા.</p>
+                <div class="social-links mt-4">
+                    <a href="tel:+919898737757" aria-label="Call Us"><i class="ph ph-phone"></i></a>
+                    <a href="https://wa.me/919898737757" target="_blank" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="lang-en">Services</h4>
+                <h4 class="lang-gu hidden locale-gu">સેવાઓ</h4>
+                <ul>
+                    <li><a href="#" class="lang-en">Air Freight</a><a href="#" class="lang-gu hidden locale-gu">હવાઈ
+                            શિપિંગ</a></li>
+                    <li><a href="#" class="lang-en">Sea Freight</a><a href="#" class="lang-gu hidden locale-gu">દરિયાઈ
+                            શિપિંગ</a></li>
+                    <li><a href="#" class="lang-en">Express Courier</a><a href="#"
+                            class="lang-gu hidden locale-gu">એક્સપ્રેસ કુરિયર</a></li>
+                    <li><a href="#" class="lang-en">Customs Clearance</a><a href="#"
+                            class="lang-gu hidden locale-gu">કસ્ટમ્સ ક્લિયરન્સ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="lang-en">Contact Us</h4>
+                <h4 class="lang-gu hidden locale-gu">અમારો સંપર્ક કરો</h4>
+                <ul class="contact-info">
+                    <li><i class="ph ph-user"></i> Yakin Patel</li>
+                    <li><i class="ph ph-phone"></i> MO - 98987 37757</li>
+                    <li><i class="ph ph-clock"></i> <span class="lang-en">Mon–Sat: 9AM – 8PM</span><span
+                            class="lang-gu hidden locale-gu">સોમ–શનિ: 9AM – 8PM</span></li>
+                    <li><i class="ph ph-map-pin"></i> Nr. Bus stop, Brahmani Complex, AT: Gozariya, Mahesana – 382825
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom border-t mt-8 pt-8 text-center text-muted">
+            <p>&copy; 2026 DSG International Courier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

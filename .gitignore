@@ -1,0 +1,17 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Archive (optional - remove if you want to keep in git)
+Archive/

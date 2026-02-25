@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your DSG International Courier shipment.">
+    <title>Track Shipment | DSG International Courier</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Gujarati:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" style="background: rgba(10, 10, 14, 0.9); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="DSG International Courier" class="brand-logo">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="track.html" class="nav-link active">Track</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="lang-toggle" class="btn-ghost">
+                    <i class="ph ph-translate"></i>
+                    <span class="current-lang">EN</span>
+                </button>
+                <a href="track.html" class="btn-primary">Track Parcel</a>
+
+                <button class="menu-toggle btn-ghost">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Track Section -->
+    <section class="section track-section"
+        style="padding-top: 150px; min-height: 80vh; display: flex; align-items: center;">
+        <div class="container container-narrow text-center fade-in-up">
+            <h1 class="lang-en" style="font-size: 3rem; margin-bottom: 1rem;">Track Your <span
+                    class="text-accent">Shipment</span></h1>
+            <h1 class="lang-gu hidden locale-gu" style="font-size: 3rem; margin-bottom: 1rem;">તમારું શિપમેન્ટ <span
+                    class="text-accent">ટ્રેક કરો</span></h1>
+
+            <p class="lang-en text-muted text-large">Enter your tracking number below to get real-time status updates.
+            </p>
+            <p class="lang-gu hidden locale-gu text-muted text-large">રીઅલ-ટાઇમ સ્ટેટસ અપડેટ્સ મેળવવા માટે તમારો
+                ટ્રેકિંગ નંબર નીચે દાખલ કરો.</p>
+
+            <form class="track-form" onsubmit="event.preventDefault();" style="margin-top: 3rem;">
+                <div class="input-group" style="padding: 1rem;">
+                    <i class="ph ph-magnifying-glass" style="font-size: 1.5rem;"></i>
+                    <input type="text" placeholder="e.g. DSG123456789" required style="font-size: 1.2rem;">
+                    <button type="submit" class="btn-primary" style="font-size: 1.1rem; padding: 1rem 3rem;">
+                        <span class="lang-en">Track Now</span>
+                        <span class="lang-gu hidden locale-gu">હવે ટ્રેક કરો</span>
+                    </button>
+                </div>
+            </form>
+
+            <div class="mt-12 text-center fade-in-up delay-1">
+                <h3 class="lang-en mb-6">Track with our Partners</h3>
+                <h3 class="lang-gu hidden locale-gu mb-6">અમારા ભાગીદારો સાથે ટ્રેક કરો</h3>
+
+                <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;">
+                    <a href="https://www.ups.com/track" target="_blank" rel="noopener noreferrer" class="btn-ghost"
+                        style="display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border: 1px solid var(--border-color); border-radius: 8px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/UPS_Logo_Shield_2017.svg"
+                            alt="UPS" style="height: 24px;">
+                        <span>UPS Tracking</span>
+                    </a>
+                    <a href="https://www.fedex.com/en-us/tracking.html" target="_blank" rel="noopener noreferrer"
+                        class="btn-ghost"
+                        style="display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border: 1px solid var(--border-color); border-radius: 8px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/FedEx_Express.svg" alt="FedEx"
+                            style="height: 24px;">
+                        <span>FedEx Tracking</span>
+                    </a>
+                    <a href="https://www.dhl.com/global-en/home/tracking.html" target="_blank" rel="noopener noreferrer"
+                        class="btn-ghost"
+                        style="display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border: 1px solid var(--border-color); border-radius: 8px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/DHL_Logo.svg" alt="DHL"
+                            style="height: 24px;">
+                        <span>DHL Tracking</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 text-muted fade-in-up delay-2">
+                <p class="lang-en">Need help with tracking? <a href="contact.html"
+                        class="text-accent hover:underline">Contact Support</a></p>
+                <p class="lang-gu hidden locale-gu">ટ્રેકિંગ માટે મદદ જોઈએ છે? <a href="contact.html"
+                        class="text-accent hover:underline">આધાર સંપર્ક કરો</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" alt="DSG International Courier" class="brand-logo">
+                </a>
+                <p class="lang-en text-muted mt-4">Connecting businesses and people globally with trusted logistics
+                    solutions.</p>
+                <p class="lang-gu hidden locale-gu text-muted mt-4">વિશ્વસનીય લોજિસ્ટિક્સ ઉકેલો સાથે વૈશ્વિક સ્તરે
+                    વ્યવસાયો અને લોકોને જોડવા.</p>
+                <div class="social-links mt-4">
+                    <a href="tel:+919898737757" aria-label="Call Us"><i class="ph ph-phone"></i></a>
+                    <a href="https://wa.me/919898737757" target="_blank" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="lang-en">Services</h4>
+                <h4 class="lang-gu hidden locale-gu">સેવાઓ</h4>
+                <ul>
+                    <li><a href="services.html" class="lang-en">Air Freight</a><a href="services.html"
+                            class="lang-gu hidden locale-gu">હવાઈ શિપિંગ</a></li>
+                    <li><a href="services.html" class="lang-en">Sea Freight</a><a href="services.html"
+                            class="lang-gu hidden locale-gu">દરિયાઈ શિપિંગ</a></li>
+                    <li><a href="services.html" class="lang-en">Express Courier</a><a href="services.html"
+                            class="lang-gu hidden locale-gu">એક્સપ્રેસ કુરિયર</a></li>
+                    <li><a href="services.html" class="lang-en">Medicine Delivery</a><a href="services.html"
+                            class="lang-gu hidden locale-gu">દવા ડિલિવરી</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="lang-en">Contact Us</h4>
+                <h4 class="lang-gu hidden locale-gu">અમારો સંપર્ક કરો</h4>
+                <ul class="contact-info">
+                    <li><i class="ph ph-user"></i> Yakin Patel</li>
+                    <li><i class="ph ph-phone"></i> MO - 98987 37757</li>
+                    <li><i class="ph ph-clock"></i> <span class="lang-en">Mon–Sat: 9AM – 8PM</span><span
+                            class="lang-gu hidden locale-gu">સોમ–શનિ: 9AM – 8PM</span></li>
+                    <li><i class="ph ph-map-pin"></i> Nr. Bus stop, Brahmani Complex, AT: Gozariya, Mahesana – 382825
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom border-t mt-8 pt-8 text-center text-muted">
+            <p>&copy; 2026 DSG International Courier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
