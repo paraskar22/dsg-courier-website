@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // ---- Mobile Menu Toggle ----
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-open');
+        const isOpen = navLinks.classList.contains('mobile-open');
+        menuToggle.innerHTML = isOpen
+            ? '<i class="ph ph-x"></i>'
+            : '<i class="ph ph-list"></i>';
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('mobile-open');
+            menuToggle.innerHTML = '<i class="ph ph-list"></i>';
+        });
+    });
+
     // ---- Language Toggle Logic ----
     const langToggleBtn = document.getElementById('lang-toggle');
     const currentLangText = langToggleBtn.querySelector('.current-lang');
