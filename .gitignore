@@ -15,3 +15,9 @@ npm-debug.log*
 
 # Archive (optional - remove if you want to keep in git)
 Archive/
+
+# Local dev & docs
+DEPLOYMENT_GUIDE.md
+SETUP_GUIDE.html
+start-server.sh
+README.md
