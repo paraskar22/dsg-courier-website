@@ -733,3 +733,71 @@ body.locale-gu-active h4.lang-gu {
         display: none;
     }
 }
+
+/* Contact Page */
+.contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.contact-action-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-action-card:hover {
+    transform: translateY(-6px);
+}
+
+.contact-action-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.form-input {
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: #25D366;
+}
+
+.form-input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+@media (max-width: 968px) {
+    .contact-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
